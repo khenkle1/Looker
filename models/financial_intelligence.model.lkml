@@ -44,6 +44,12 @@ explore: benchmarks {
     sql_on: ${benchmarks.segmentid} = ${segments.id} ;;
     relationship: many_to_one
   }
+
+  join: locationhierarchy {
+    type: left_outer
+    sql_on: ${benchmarks.locationid} = ${locationhierarchy.locationid}.id} ;;
+    relationship: many_to_one
+  }
 }
 
 explore: benchmarks2_yrgrowth {
