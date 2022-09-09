@@ -47,7 +47,7 @@ explore: benchmarks {
 
   join: locationhierarchy {
     type: left_outer
-    sql_on: ${benchmarks.locationid} = ${locationhierarchy.locationid}.id} ;;
+    sql_on: ${benchmarks.locationid} = ${locationhierarchy.locationid} ;;
     relationship: many_to_one
   }
 }
