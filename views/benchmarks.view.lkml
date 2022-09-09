@@ -90,8 +90,8 @@ view: benchmarks {
   }
 
   measure: value {
-    type: number
-    sql: ${TABLE}."VALUE" ;;
+    type: sum
+    sql: SUM(${TABLE}."VALUE") ;;
   }
 
   measure: count {
