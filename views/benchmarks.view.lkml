@@ -90,7 +90,7 @@ view: benchmarks {
   }
 
   measure: value {
-    type: sum
+    type: number
     sql: SUM(${TABLE}."VALUE") ;;
   }
 
