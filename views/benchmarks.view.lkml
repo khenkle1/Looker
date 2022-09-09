@@ -89,7 +89,7 @@ view: benchmarks {
     sql: ${TABLE}."UNITCOUNT" ;;
   }
 
-  dimension: value {
+  measure: value {
     type: number
     sql: ${TABLE}."VALUE" ;;
   }
